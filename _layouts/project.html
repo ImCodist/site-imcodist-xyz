@@ -1,0 +1,54 @@
+---
+layout: default
+permalink: /projects/:categories/:title/
+---
+
+<div class="project">
+    <div class="content" id="top_content">
+        <h1 id="title">{{ page.full_name | default: page.title }}</h1>
+
+        <p id="info">
+            {% if page.categories %}<i class="bi bi-book"></i> {{ page.categories | join: ", " | capitalize }}{% endif %}
+            {% if page.status %} / <i class="bi bi-box-seam"></i> {{ page.status | capitalize }}{% endif %}
+            <br>
+            {% if page.date %}<i class="bi bi-clock-history"></i> {{ page.date | date: "%b %d, %Y" }}{% endif %}
+            <br>
+            <i class="bi bi-tags"></i> {% if page.tags.size >= 1 %}{{ page.tags | join: ", " }}{% endif %}
+        </p>
+
+        {% if page.links.size >= 1 %}
+        <ul id="links">
+            <i class="bi bi-link-45deg"></i>
+            {% for link in page.links %}
+                <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if page.downloads.size >= 1 %}
+        <ul id="links">
+            <i class="bi bi-download"></i>
+            {% for download in page.downloads %}
+                <li><a href="{{ download[1] }}">{{ download[0] }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    
+    {% if page.images.size >= 1 or page.videos.size >= 1 %}
+    <div class="content" id="image_content">
+        <div id="container">
+            {% for video in page.videos %}
+                <iframe src="{{ video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            {% endfor %}
+            {% for image in page.images %}
+                <a href="{{ image }}" target="_blank"><div id="image"><img src="{{ image }}"></div></a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="content" id="main_content">
+        {{ content }}
+    </div>
+</div>

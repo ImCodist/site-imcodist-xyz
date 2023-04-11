@@ -1,0 +1,35 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "codist" # the name of your site, e.g. ACME Corp.
+
+exclude:
+- README.md
+
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+
+defaults:
+- scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "post"
+    navurl: "/blog/"
+    navtitle: "blog"
+
+- scope:
+    path: ""
+    type: "projects"
+  values:
+    in_content: false
+    layout: "project"
+    navurl: "/projects/"
+    navtitle: "projects"
+
+- scope:
+    path: ""
+  values:
+    layout: "default"

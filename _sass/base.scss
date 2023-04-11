@@ -1,0 +1,274 @@
+body {
+    padding: 20px;
+    margin: 0px;
+
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+
+
+/* containers */
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+
+    max-width: 900px;
+
+    padding: 0px;
+    margin: auto;
+}
+
+.content {
+    padding: 30px;
+}
+
+
+/* text classes */
+.page_title {
+    margin-top: 0px;
+}
+
+
+/* header */
+.header {
+    background-color: $color_primary;
+
+    height: 65px;
+
+    img {
+        height: 100%;
+    }
+
+    #character {
+        float: right;
+    }
+}
+
+
+/* header navbar */
+.nav_bar {
+    ul {
+        list-style-type: none;
+
+        overflow: hidden;
+        background-color: $color_black;
+
+        padding: 0px;
+        margin: 0px;
+    }
+
+    li {
+        float: left;
+        
+        a {
+            display: block;
+
+            color: $color_secondary;
+
+            text-align: center;
+            text-decoration: none;
+
+            padding: 8px 18px;
+        }
+
+        a:hover {
+            background-color: $color_black2;
+        }
+    }
+
+    .active {
+        color: $color_black !important;
+        background-color: $color_secondary !important;
+
+        font-weight: bold;
+    }
+}
+
+/* footer */
+.footer {
+    background-color: $color_primary;
+    color: $color_white;
+
+    padding: 5px;
+
+    a {
+        color: $color_secondary;
+        margin: 10px;
+    }
+}
+
+/* tool tips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+    .tooltip_text {
+        visibility: hidden;
+        width: 120px;
+
+        background-color: $color_black;
+        color: $color_white;
+
+        text-align: center;
+
+        padding: 5px;
+        padding-bottom: 8px;
+
+        position: absolute;
+        z-index: 1;
+
+        opacity: 0%;
+
+        a {
+            color: $color_secondary;
+        }
+    }
+}
+
+.tooltip:hover .tooltip_text {
+    visibility: visible;
+
+    opacity: 100%;
+}
+
+/* specific */
+#intro {
+    overflow: hidden;
+    position: relative;
+
+    padding: 30px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+
+    background: linear-gradient(0deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 100%);
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: large;
+        max-width: 500px;
+    }
+
+    #image {
+        opacity: 0%;
+    
+        animation-name: fadeIn;
+        animation-fill-mode: forwards;
+        animation-duration: 0.5s;
+        animation-delay: 0.2s;
+
+        position: absolute;
+        right: 0%;
+        top: 2%;
+
+        @media (max-width: 780px) {
+            display: none;
+        }
+
+        .tooltip_text {
+            width: 70%;
+
+            left: 18%;
+            top: 60%;
+        }
+    }
+}
+
+/* projects */
+/* list page */
+.projects {
+    list-style-type: none;
+
+    padding: 0px;
+    margin: 40px;
+
+    margin-top: 0px;
+
+    h2 {
+        margin-bottom: 5px;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 30px;
+            margin-left: 0px;
+
+            position: relative;
+            top: 7px;
+        }
+    }
+
+    #info {
+        color: $color_gray;
+
+        margin-top: -5px;
+    }
+}
+
+/* project page */
+.project {
+    #top_content {
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+        background: linear-gradient(0deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 100%);
+    }
+
+    #links {
+        list-style-type: none;
+        padding: 0px;
+
+        li {
+            display: inline;
+
+            padding-right: 5px;
+        }
+    }
+
+    #image_content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            
+            align-items: center;
+            
+            overflow-x: scroll;
+            overflow-y: hidden;
+
+            #image {
+                padding: 5px;
+                height: 150px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            iframe {
+                padding: 5px;
+                height: 150px;
+                width: 266.67px;
+            }
+
+            :first-child {
+                margin-left: auto;
+            }
+            
+            :last-child {
+                margin-right: auto;
+            }
+        }
+    }
+
+    #main_content {
+        padding-top: 10px;
+    }
+}
+

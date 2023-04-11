@@ -1,0 +1,20 @@
+<div class="header">
+    <img src="/assets/img/codist_logo.png" alt="logo">
+    <img id="character" src="/assets/img/characters/codist.png">
+</div>
+
+<nav class="nav_bar">
+    <ul>
+        {% for item in site.data.navigation %}
+            {% assign navurl = page.url %}
+
+            {% if page.navurl %}
+                {% assign navurl = page.navurl %}
+            {% endif %}
+
+            <li><a href="{{ item.url }}" {% if navurl == item.url %}class="active"{% endif %}>
+                /{{ item.name }}
+            </a></li>
+        {% endfor %}
+    </ul>
+</nav>

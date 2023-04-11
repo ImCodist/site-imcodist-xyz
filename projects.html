@@ -1,0 +1,25 @@
+---
+title: projects
+---
+
+<h1 class="page_title">Projects</h1>
+
+<ul class="projects">
+    {% assign project_array = site.projects | sort: "full_name" %}
+    {% for project in project_array %}
+        <li>
+            <h2>
+                <a href="{{ project.url }}">{{ project.full_name | default: project.title }}
+                <img src="{{ project.icon | default: "assets/img/missing_project_icon.png" }}">
+            </a></h2>
+
+            <p id="info">
+                {% if project.categories %}{{ project.categories | join: ", " }}{% endif %}
+                {% if project.tags.size >= 1 %} / {{ project.tags | join: ", " }}{% endif %}
+                {% if project.date %} / {{ project.date | date: "%Y" }}{% endif %}
+            </p>
+
+            <p>{{ project.excerpt }}</p>
+        </li>
+    {% endfor %}
+</ul>
