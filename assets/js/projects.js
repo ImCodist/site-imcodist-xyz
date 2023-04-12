@@ -4,9 +4,6 @@ var unlocked = false;
 var sound = new Audio("/assets/sounds/secret.ogg");
 var soundblip = new Audio("/assets/sounds/secret_start.ogg");
 
-var badProjects = document.querySelectorAll("#badproject");
-badProjects.forEach((project) => project.style.display = "none");
-
 function stepCheck(neededSteps) {
     if (neededSteps.includes(step)) {
         step += 1;
