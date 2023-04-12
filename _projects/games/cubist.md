@@ -5,7 +5,7 @@ tags: platformer
 date: 2020-01-01T12:00:00+0000
 date_correct: false
 status: in development
-icon: /assets/img/project_icons/cubist.png
+icon: /assets/images/project_icons/cubist.png
 links: {"Archive": "https://drive.google.com/drive/folders/1zqHm7BwGi1RakzmRJxqEnpxNLGascmp5?usp=share_link"}
 images: ["/assets/projects/cubist/image1.png", "/assets/projects/cubist/image2.png", "/assets/projects/cubist/Cubist%20Ref.png", 
         "/assets/projects/cubist/SPRITE%20EVO.png"]

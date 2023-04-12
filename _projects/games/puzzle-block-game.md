@@ -4,7 +4,7 @@ categories: game
 tags: puzzle
 date: 2022-02-07T22:01:52+0000
 status: released
-icon: /assets/img/project_icons/ljapbg.png
+icon: /assets/images/project_icons/ljapbg.png
 downloads: {
     "itch.io": "https://codist.itch.io/literally-just-a-puzzle-block-game",
     "Game Jolt": "https://gamejolt.com/games/literally-just-a-puzzle-block-game/689246"

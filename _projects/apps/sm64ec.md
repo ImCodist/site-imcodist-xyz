@@ -4,7 +4,7 @@ categories: app
 tags: machinima
 date: 2021-05-22T00:17:38+0000
 status: released
-icon: /assets/img/project_icons/sm64ec.png
+icon: /assets/images/project_icons/sm64ec.png
 links: {"Source": "https://github.com/ImCodist/sm64-eye-changer"}
 videos: ["https://www.youtube.com/embed/AL3oDUHTliU"]
 images: ["/assets/projects/sm64ec/app.png"]

@@ -4,7 +4,7 @@ categories: fangame
 tags: remake rhythm
 date: 2021-01-31T20:12:14+0000
 status: released
-icon: /assets/img/project_icons/fnfgms2.png
+icon: /assets/images/project_icons/fnfgms2.png
 downloads: {"GitHub": "https://github.com/ImCod2st/Friday-Night-Funkin-Gamemaker-Remake/releases"}
 links: {"Source": "https://github.com/ImCod2st/Friday-Night-Funkin-Gamemaker-Remake"}
 videos: ["https://www.youtube.com/embed/YUBSwWRXxUQ"]

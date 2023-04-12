@@ -7,10 +7,10 @@ title: projects
 <ul class="projects">
     {% assign project_array = site.projects | sort: "full_name" %}
     {% for project in project_array %}
-        <li>
+        <li id="{% if project.bad %}badproject{% endif %}">
             <h2>
                 <a href="{{ project.url }}">{{ project.full_name | default: project.title }}
-                <img src="{{ project.icon | default: "assets/img/missing_project_icon.png" }}">
+                <img src="{{ project.icon | default: "assets/images/missing_project_icon.png" }}">
             </a></h2>
 
             <p id="info">
@@ -23,3 +23,5 @@ title: projects
         </li>
     {% endfor %}
 </ul>
+
+<script src="/assets/js/projects.js"></script>
