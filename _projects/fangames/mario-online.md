@@ -6,7 +6,7 @@ date: 2020-11-22T12:00:00+0000
 status: cancelled
 icon: /assets/images/project_icons/marioonline.png
 links: {"Archive": "https://drive.google.com/drive/folders/1trUZhbZ0vpDPY0AdoX_r9fkDnZn4AceM?usp=share_link"}
-images: ["/assets/projects/marioonline/title.png", "/assets/projects/marioonline/character.png", "/assets/projects/marioonline/launcher.png"]
+images: ["/assets/projects/marioonline/title.png", "/assets/projects/marioonline/character.png", "/assets/projects/marioonline/gameplay.png", "/assets/projects/marioonline/launcher.png"]
 ---
 
 An online multiplayer adaptation of the Mario series.

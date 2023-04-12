@@ -1,5 +1,5 @@
 ---
-full_name: "FNaCaC"
+full_name: "Five Nights at Codist's & Co"
 categories: fangame
 tags: '"horror"'
 date: 2020-01-01T12:00:00+0000
