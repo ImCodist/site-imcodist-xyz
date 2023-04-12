@@ -2,12 +2,6 @@
 layout: default
 permalink: /projects/:categories/:title/
 ---
-<head>
-    <meta content="{{ page.full_name | default: page.title }}" property="og:title" />
-    <meta content="{{ page.excerpt }}" property="og:description" />
-    <meta content="{{ page.images[0] }}" property="og:image" />
-</head>
-
 <div class="project">
     <div class="content" id="top_content">
         <h1 id="title">{{ page.full_name | default: page.title }}</h1>
