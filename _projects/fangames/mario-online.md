@@ -15,3 +15,5 @@ This started as a dumb random thing that I wanted to exist because online Mario 
 But the scope became too large.
 
 I dont like this game.
+
+Credit to *licorice⁴⁵#5471* for the archival of each Mario Online build.
