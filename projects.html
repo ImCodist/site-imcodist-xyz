@@ -7,7 +7,7 @@ title: projects
 <ul class="projects">
     {% assign project_array = site.projects | sort: "full_name" %}
     {% for project in project_array %}
-        <li id="{% if project.bad %}badproject{% endif %}">
+        <li {% if project.bad %}class="badproject invisible"{% endif %}>
             <h2>
                 <a href="{{ project.url }}">{{ project.full_name | default: project.title }}
                 <img src="{{ project.icon | default: "assets/images/missing_project_icon.png" }}">

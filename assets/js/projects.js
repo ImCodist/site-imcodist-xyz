@@ -37,8 +37,8 @@ document.addEventListener('keydown', function(event) {
         step = 0;
     } else {
         if (step == 8) {
-            var badProjects = document.querySelectorAll("#badproject");
-            badProjects.forEach((project) => project.style.display = "inline");
+            var badProjects = document.querySelectorAll(".badproject");
+            badProjects.forEach((project) => project.classList.remove("invisible"));
             
             step = 0;
 

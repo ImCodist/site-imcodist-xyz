@@ -207,10 +207,12 @@ body {
         margin-top: -5px;
     }
 
-    #badproject {
-        display: none !important;
-
+    .badproject {
         font-family: Comic Sans MS, Comic Sans, cursive !important;
+    }
+
+    .invisible {
+        display: none !important;
     }
 }
 
