@@ -41,6 +41,10 @@ body {
 
     #character {
         float: right;
+
+        @media (max-width: 300px) {
+            display: none;
+        }
     }
 }
 
@@ -281,3 +285,100 @@ body {
     }
 }
 
+/* about */
+.about {
+    display: flex;
+    overflow-y: auto;
+
+    @media (max-width: 450px) {
+        display: inline-block;
+    }
+
+    #left {
+        #codistbox {
+            padding: 0px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            width: 200px;
+
+            img {
+                border: 4px solid $color_black;
+                
+                width: 100%;
+            }
+
+            @media (max-width: 450px) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    #right {
+        #namebox {
+            #name {
+                cursor: pointer;
+
+                display: inline;
+                margin: 0px;
+            }
+
+            #pronouns {
+                color: $color_gray;
+                display: inline;
+            }
+
+            #flags {
+                display: flex;
+                align-items: center;
+
+                height: 30px;
+
+                margin: 2px;
+                margin-left: 0px;
+                margin-right: 0px;
+                
+                #flag {
+                    img {
+                        border: 2px solid $color_black;
+                        height: 100%;
+                    }
+
+                    .tooltip_text {
+                        width: 100px;
+
+                        top: 120%;
+                        left: 50%;
+
+                        margin-left: -55px;
+                    }
+                    
+                    height: 100%;
+                    margin-right: 5px;
+                }
+
+                #vl {
+                    border-left: 2px solid $color_gray;
+                    height: 30px;
+                    margin-top: 3px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        #descriptionbox {
+            margin-top: 15px;
+
+            * {
+                margin: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            h3 {
+                margin-top: 20px;  
+            }
+        }
+    }
+}

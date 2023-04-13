@@ -1,0 +1,81 @@
+---
+title: about
+---
+
+<div class="about">
+    <div id="left">
+        <div id="codistbox">
+            <img id="codistimage" src="/assets/images/about/codist1.gif" alt="codist">
+        </div>
+    </div>
+
+    <div id="right">
+        <div id="namebox">
+            <h1 id="name">codist</h1>
+            <p id="pronouns">(he/him)</p>
+
+            <div id="flags">
+                <div class="tooltip" id="flag">
+                    <div class="tooltip_text">Canadian</div>
+                    <img src="/assets/images/about/canada.png" alt="canada">
+                </div>
+                <div id="vl"></div>
+                <div class="tooltip" id="flag">
+                    <div class="tooltip_text">Aromantic Asexual</div>
+                    <img src="/assets/images/about/aroace.png" alt="canada">
+                </div>
+            </div>
+        </div>
+
+        <div id="descriptionbox">
+            <p>Hello! I am <b>codist</b>!</p>
+            <p>I'm a 17 year old human person from <b>Canada</b> who had taught themselves <b>programming</b> by spending a <i>little too much</i> time on the internet.</p>
+
+            <h3>Talents</h3>
+            <p>I wouldn't really consider myself talented but I do know some things.</p>
+            <p>
+                Most people know me for my <b>programming</b> skills, it's in my name after all! I know <b>Python</b>, <b>Javascript</b>, and a teeny bit of <b>C++</b>.
+                But I am always looking to expand my knowledge in different programming languages.
+            </p>
+            <p>
+                In terms of game engines I know <b>GDScript</b> (Godot), <b>GML</b> (GameMaker), and I have tinkered around in <b>C#</b> (Unity) a little.
+            </p>
+            <p>
+                I make an attempt at creating <b>art</b>, but it is definitely not my strong suit.
+                Although I have improved over the years, and if you want to see some of my stuff check out my <a href="https://codist.newgrounds.com/">Newgrounds</a> page.
+            </p>
+
+            <h3>Awesome Facts</h3>
+            <p>My favorite video games include <b>Super Mario 64</b>, <b>Celeste</b>, <b>Portal 2</b>, <b>Undertale</b>, and <b>Pizza Tower</b> (no specific order)</p>
+            <p>I am a <b>dog person</b> but am slowly being moved onto the fence after being sent 1000 cat gifs by a <i>cough cough</i> <a href="https://twitter.com/ClodiumStuff">certain user</a> <i>cough cough</i>.</p>
+            <p>I pick <b>Mario</b> in any <b>Mario Party</b> game.</p>
+            <p><a href="https://www.youtube.com/@cod2st">Cod2st</a> and I are not related.</p>
+            <p>I have gotten close enough to kick <a href="https://twitter.com/MrIDCrisis">Kuu</a> before.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var sound = new Audio("/assets/sounds/codist.mp3");
+    var sounder = new Audio("/assets/sounds/codit.mp3");
+
+    var clicks = 0;
+
+    const name = document.querySelector("#name");
+    name.addEventListener("click", (event) => {
+        var soundto = sound;
+        if (clicks >= 10) soundto = sounder;
+
+        if (clicks == 10) {
+            name.innerHTML = "codit";
+
+            const image = document.querySelector("#codistimage");
+            image.src = "/assets/images/about/codist1_what.gif"
+        }
+
+        soundto.fastSeek(0);
+        soundto.play();
+
+        clicks += 1;
+    });
+</script>

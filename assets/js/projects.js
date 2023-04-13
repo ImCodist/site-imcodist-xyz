@@ -45,6 +45,7 @@ document.addEventListener('keydown', function(event) {
             sound.play();
             unlocked = true;
         } else {
+            soundblip.fastSeek(0);
             soundblip.play();
         }
     }
