@@ -113,6 +113,8 @@ body {
         background-color: $color_black;
         color: $color_white;
 
+        border: 1px solid $color_white;
+
         text-align: center;
 
         padding: 5px;
@@ -175,7 +177,7 @@ body {
             width: 70%;
 
             left: 18%;
-            top: 60%;
+            top: 58%;
         }
     }
 }
@@ -288,7 +290,6 @@ body {
 /* about */
 .about {
     display: flex;
-    overflow-y: auto;
 
     @media (max-width: 450px) {
         display: inline-block;
@@ -377,7 +378,12 @@ body {
             }
 
             h3 {
-                margin-top: 20px;  
+                margin-top: 25px;  
+            }
+
+            ul {
+                padding-left: 20px;
+                padding-right: 20px;
             }
         }
     }
