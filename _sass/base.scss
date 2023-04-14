@@ -198,6 +198,7 @@ body {
 
         a {
             text-decoration: none;
+            color: $color_blue;
         }
 
         img {
@@ -408,7 +409,7 @@ body {
         }
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
         display: inline-block;
 
         #left {
