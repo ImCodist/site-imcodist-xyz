@@ -1,0 +1,19 @@
+- name: Twitter
+  url: https://twitter.com/ImCodist
+  icon: bi bi-twitter
+  color: "#55acee"
+
+- name: YouTube
+  url: https://www.youtube.com/@codist
+  icon: bi bi-youtube
+  color: "#ed302f"
+
+- name: GitHub
+  url: https://github.com/ImCodist
+  icon: bi bi-github
+  color: "#333333"
+
+- name: Discord
+  url: https://discord.com/users/323521498365296642
+  icon: bi bi-discord
+  color: "#7289da"

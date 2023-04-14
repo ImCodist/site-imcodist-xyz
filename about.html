@@ -9,10 +9,12 @@ title: about
         </div>
 
         <div id="socialbox">
-            <a href="https://twitter.com/ImCodist"><i class="bi bi-twitter" style="color: #55acee;"></i></a>
-            <a href="https://www.youtube.com/@codist"><i class="bi bi-youtube" style="color: #ed302f;"></i></a>
-            <a href="https://github.com/ImCodist"><i class="bi bi-github" style="color: #333333;"></i></a>
-            <a href="https://discord.com/users/323521498365296642"><i class="bi bi-discord" style="color: #7289da;"></i></a>
+            {% for item in site.data.socials %}
+            <div class="tooltip" id="social">
+                <div class="tooltip_text">{{ item.name }}</div>
+                <a href="{{ item.url }}"><i class="{{ item.icon }}" style="color: {{ item.color }};"></i></a>
+            </div>
+            {% endfor %}
         </div>
     </div>
 
