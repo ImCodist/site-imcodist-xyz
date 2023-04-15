@@ -16,8 +16,6 @@ In B-LEAP you use trampolines to leap around the stage collecting coins to buy u
 
 This game was made for the [GMTK 2020 Game Jam](https://itch.io/jam/gmtk-2020), the theme was "Out of Control."
 
----
-
 ## Gameplay
 
 The game is a simple high score based game. Your goal is to get as far as you can without losing all of your lifes.
