@@ -3,6 +3,9 @@ url: https://imcodist.github.io  # the base hostname and protocol for your site,
 
 title: "codist" # the name of your site, e.g. ACME Corp.
 
+plugins:
+  - jekyll-reading-time
+
 exclude:
 - README.md
 
