@@ -20,6 +20,7 @@ defaults:
     path: ""
     type: "posts"
   values:
+    in_content: false
     layout: "post"
     navurl: "/blog/"
     navtitle: "blog"
