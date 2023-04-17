@@ -1,9 +1,7 @@
 source "https://rubygems.org"
 
-
+# jekyll
 gem "jekyll"
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-
 
 # plugins
 gem "jekyll-reading-time"
