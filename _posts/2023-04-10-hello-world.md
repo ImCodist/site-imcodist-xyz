@@ -1,3 +1,7 @@
+---
+tags: funny hilarious
+---
+
 Veniam do aliqua laboris cupidatat. Ad consequat fugiat anim exercitation aute. Aliquip magna nostrud reprehenderit est.
 
 Aliquip fugiat ex commodo magna sit occaecat duis voluptate consectetur aliqua commodo eu minim. Deserunt ullamco et laborum elit velit nulla adipisicing eu officia excepteur ut est eiusmod deserunt. Dolore officia excepteur cupidatat velit sint et laborum enim nulla proident quis.
