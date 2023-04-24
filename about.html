@@ -12,7 +12,13 @@ title: about
             {% for item in site.data.socials %}
             <div class="tooltip" id="social">
                 <div class="tooltip_text">{{ item.name }}</div>
-                <a href="{{ item.url }}"><i class="{{ item.icon }}" style="color: {{ item.color }};"></i></a>
+                <a href="{{ item.url }}">
+                    {% if item.image-icon %}
+                    <img src="{{ item.icon }}">
+                    {% else %}
+                    <i class="{{ item.icon }}" style="color: {{ item.color }};"></i>
+                    {% endif %}
+                </a>
             </div>
             {% endfor %}
         </div>

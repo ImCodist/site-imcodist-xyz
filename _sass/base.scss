@@ -99,6 +99,26 @@ body {
         color: $color_secondary;
         margin: 10px;
     }
+
+    p {
+        display: inline;
+
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #s {
+        display: inline;
+        padding-right: 10px;
+    }
+
+    #updated {
+        color: $color_gray;
+
+        @media (max-width: 650px) {
+            display: none;
+        }
+    }
 }
 
 /* tool tips */
@@ -297,13 +317,13 @@ body {
     #left {
         #codistbox {
             padding: 0px;
-            margin-right: 20px;
+            margin-right: 25px;
             margin-bottom: 5px;
 
             width: 200px;
 
             img {
-                border: 4px solid $color_black;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
                 
                 width: 100%;
             }
@@ -311,13 +331,14 @@ body {
 
         #socialbox {
             padding: 5px;
-            margin-right: 12px;
+            margin-right: 25px;
             margin-bottom: 20px;
 
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             
-            border: 4px solid $color_black;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
             
             i {
                 margin-left: 3px;
@@ -327,13 +348,20 @@ body {
                 color: $color_black;
             }
 
+            img {
+                margin-left: 3px;
+                margin-right: 3px;
+
+                width: 30px;
+            }
+
             .tooltip_text {
-                width: 80px;
+                width: 95px;
 
                 top: 105%;
                 left: 50%;
 
-                margin-left: -46px;
+                margin-left: -54px;
             }
         }
     }
@@ -417,27 +445,27 @@ body {
         color: black;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
         display: inline-block;
 
         #left {
             #codistbox {
-                img {
-                    border: 0px;
-                }
-
                 width: 100px;
                 height: 100px;
 
                 margin-left: auto;
                 margin-right: auto;
 
-                padding-right: 10px;
+                margin-bottom: 15px;
+
+                img {
+                    border-radius: 50%;
+                }
             }
 
             #socialbox {
-                border: 0px;
-                border-bottom: 4px solid $color_black;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     }
