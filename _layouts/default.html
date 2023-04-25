@@ -17,11 +17,12 @@
 
     {% if navtitle %}
     <title>{{ site.title }}:/{{ navtitle }}</title>
+    <meta content="{{ site.title }}:/{{ navtitle }}" property="og:title" />
     {% else %}
     <title>{{ site.title }}</title>
+    <meta content="{{ site.title }}" property="og:title" />
     {% endif %}
 
-    <meta content="{{ page.title }}" property="og:title" />
     <meta content="{{ page.excerpt }}" property="og:description" />
     <meta content="https://imcodist.github.io/assets/images/characters/codist.png" property="og:image" />
     <meta content="#d82148" data-react-helmet="true" name="theme-color" />
