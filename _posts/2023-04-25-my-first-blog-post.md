@@ -25,7 +25,7 @@ There is a lot to look forward to if you are a fan of anti-social teenagers with
 
 I hope you like my little blog thing and look forward to more content in the future!
 
-I'm personally really excited to start posting here so I don't have to rely so heavily *certain social media run by certain emerald mine owner*.
+I'm personally really excited to start posting here so I don't have to rely so heavily on a *certain social media run by certain emerald mine owner*.
 
 I am going to go back to playing Factorio now I've been trying to automate these science packs but they require a lot of resources which I don't make enough of, so I have had the game idle in the background writing this trying to research a gate which by the way still hasn't been finished im not even going to use it i already killed all the aliens around my base so its not like i need to keep anything out of it right now god dam nit
 
