@@ -8,8 +8,8 @@
 - name: projects
   url: /projects/
 
-# - name: blog
-#   url: /blog/
+- name: blog
+  url: /blog/
 
 # - name: test
 #   url: /test/

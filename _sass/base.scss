@@ -245,6 +245,19 @@ body {
     }
 }
 
+.list_page_header {
+    .page_title {
+        margin-bottom: 0px;
+    }
+
+    #info {
+        color: $color_gray;
+
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+
 /* project page */
 .project {
     #top_content {
@@ -309,6 +322,7 @@ body {
         padding-bottom: 10px;
     }
 }
+
 
 /* about */
 .about {

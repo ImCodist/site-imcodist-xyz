@@ -2,7 +2,10 @@
 title: projects
 ---
 
-<h1 class="page_title">Projects</h1>
+<div class="list_page_header">
+    <h1 class="page_title">Projects</h1>
+    <p id="info"><i class="bi bi-kanban"></i> {{ site.projects | size | pluralize: 'project', 'projects' }}</p>
+</div>
 
 <ul class="projects">
     {% assign project_array = site.projects | sort: "full_name" %}
