@@ -2,15 +2,30 @@
 title: projects
 ---
 
+<script src="/assets/js/projects.js"></script>
+
 <div class="list_page_header">
     <h1 class="page_title">Projects</h1>
     <p id="info"><i class="bi bi-kanban"></i> {{ site.projects | size | pluralize: 'project', 'projects' }}</p>
 </div>
 
+<div class="list_page_input">
+    <select id="tags" name="states[]" multiple="multiple">
+        <option value="game" selected="selected">Game</option>
+        <option value="app" selected="selected">App</option>
+        <option value="fangame">Fangame</option>
+        <option value="mod">Mod</option>
+    </select>
+</div>
+
 <ul class="projects">
     {% assign project_array = site.projects | sort: "full_name" %}
     {% for project in project_array %}
-        <li {% if project.bad %}class="badproject invisible"{% endif %}>
+        <li 
+        {% if project.bad %}class="badproject invisible"{% endif %}
+        {% if project.categories %}categories="{{ project.categories | join: " " }}"{% endif %}
+        {% if project.tags.size >= 1 %}tags="{{ project.tags | join: " " }}"{% endif %}
+        >
             <h2>
                 <a href="{{ project.url }}">{{ project.full_name | default: project.title }}
                 <img src="{{ project.icon | default: "/assets/images/missing_project_icon.png" }}">
@@ -26,5 +41,3 @@ title: projects
         </li>
     {% endfor %}
 </ul>
-
-<script src="/assets/js/projects.js"></script>
