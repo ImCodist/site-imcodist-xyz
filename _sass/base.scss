@@ -258,6 +258,24 @@ body {
     }
 }
 
+.list_page_input {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    #tags {
+        flex-grow: 1;
+    }
+
+    i {
+        font-size: 20px;
+        padding-right: 10px;
+
+        color: $color_gray;
+    }
+}
+
 /* project page */
 .project {
     #top_content {
