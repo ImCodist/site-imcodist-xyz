@@ -59,13 +59,12 @@ document.addEventListener('keydown', function(event) {
         step = 0;
     } else {
         if (step == 8) {
-            var badProjects = document.querySelectorAll(".badproject");
-            badProjects.forEach((project) => project.classList.remove("invisible"));
-            
             step = 0;
 
             sound.play();
             unlocked = true;
+
+            updateProjects();
         } else {
             soundblip.fastSeek(0);
             soundblip.play();
@@ -77,7 +76,8 @@ $(document).ready(function() {
     var tagsBox = $(".list_page_input #tags");
     tagsBox.select2({
         placeholder: "Categories",
-        allowClear: true
+        allowClear: true,
+        width: "resolve",
     });
     tagsBox.on("select2:select", updateProjects);
     tagsBox.on("select2:unselect", updateProjects);
