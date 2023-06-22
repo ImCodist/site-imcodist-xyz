@@ -76,7 +76,7 @@ document.addEventListener('keydown', function(event) {
 $(document).ready(function() {
     var tagsBox = $(".list_page_input #tags");
     tagsBox.select2({
-        placeholder: "Tags",
+        placeholder: "Categories",
         allowClear: true
     });
     tagsBox.on("select2:select", updateProjects);
