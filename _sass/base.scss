@@ -264,13 +264,13 @@ body {
     justify-content: center;
     align-items: center;
 
-    #tags {
+    .select2 {
         flex-grow: 1;
+        margin-left: 10px;
     }
 
     i {
         font-size: 20px;
-        padding-right: 10px;
 
         color: $color_gray;
     }

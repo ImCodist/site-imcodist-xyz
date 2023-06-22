@@ -10,19 +10,31 @@ function updateProjects() {
         if (project.classList.contains("badproject") && !unlocked) return;
         project.classList.add("invisible");
 
-        var WORTHY = false;
+        var UNWORTHY = false;
         
-        var selected_categories = $(".list_page_input #tags").select2("data");
-        if (selected_categories.length <= 0) WORTHY = true;
-
+        var selected_categories = $(".list_page_input #categories").select2("data");
+        var selected_tags = $(".list_page_input #tags").select2("data");
+        
+        var passed_category = false;
         var categories = project.getAttribute("categories").split(" ");
         selected_categories.forEach((category) => {
             if (categories.includes(category.element.getAttribute("value"))) {
-                WORTHY = true;
+                passed_category = true;
             }
         })
 
-        if (WORTHY) project.classList.remove("invisible");
+        if (!passed_category && selected_categories.length > 0) UNWORTHY = true;
+        
+        if (selected_tags.length > 0) {
+            var tags = project.getAttribute("tags").split(" ");
+            selected_tags.forEach((tag) => {
+                if (!tags.includes(tag.element.getAttribute("value"))) {
+                    UNWORTHY = true;
+                }
+            })
+        }
+
+        if (!UNWORTHY) project.classList.remove("invisible");
     });
 }
 
@@ -30,6 +42,16 @@ function stepCheck(neededSteps) {
     if (neededSteps.includes(step)) {
         step += 1;
     }
+}
+
+function processSelectData(array, select, defaults = []) {
+    let uniqueTags = [...new Set(array)];
+
+    uniqueTags.forEach((tag) => {
+        var selected = defaults.includes(tag);
+        var option = new Option(tag, tag, selected, selected);
+        $(select).append(option).trigger("change");
+    });
 }
 
 document.addEventListener('keydown', function(event) {
@@ -73,9 +95,18 @@ document.addEventListener('keydown', function(event) {
 });
 
 $(document).ready(function() {
+    var categoriesBox = $(".list_page_input #categories");
+    categoriesBox.select2({
+        placeholder: "Categories",
+        allowClear: true,
+        width: "resolve",
+    });
+    categoriesBox.on("select2:select", updateProjects);
+    categoriesBox.on("select2:unselect", updateProjects);
+
     var tagsBox = $(".list_page_input #tags");
     tagsBox.select2({
-        placeholder: "Categories",
+        placeholder: "Tags",
         allowClear: true,
         width: "resolve",
     });

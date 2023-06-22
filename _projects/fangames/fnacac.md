@@ -1,7 +1,7 @@
 ---
 full_name: "Five Nights at Codist's & Co"
 categories: fangame
-tags: '"horror"'
+tags: horror
 date: 2020-01-01T12:00:00+0000
 status: cancelled
 icon: /assets/images/project_icons/bad/fnacac.png

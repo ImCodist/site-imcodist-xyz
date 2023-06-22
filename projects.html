@@ -11,12 +11,9 @@ title: projects
 
 <div class="list_page_input">
     <i class="bi bi-tags"></i>
-    <select id="tags" name="states[]" multiple="multiple">
-        <option value="game" selected="selected">Game</option>
-        <option value="app" selected="selected">App</option>
-        <option value="fangame">Fangame</option>
-        <option value="mod">Mod</option>
-    </select>
+
+    <select id="categories" name="states[]" multiple="multiple"></select>
+    <select id="tags" name="states[]" multiple="multiple"></select>
 </div>
 
 <ul class="projects">
@@ -42,3 +39,22 @@ title: projects
         </li>
     {% endfor %}
 </ul>
+
+<script>
+    var tags = [];
+    var categories = [];
+    {% for project in site.projects %}
+
+        {% for tag in project.tags %}
+        tags.push('{{ tag }}');
+        {% endfor %}
+
+        {% for category in project.categories %}
+        categories.push('{{ category }}');
+        {% endfor %}
+
+    {% endfor %}
+
+    processSelectData(tags, ".list_page_input #tags");
+    processSelectData(categories, ".list_page_input #categories", ["game", "app"]);
+</script>
