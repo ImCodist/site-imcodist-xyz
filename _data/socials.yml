@@ -28,3 +28,9 @@
   icon: /assets/images/socials/newgrounds.png
   image-icon: true
   color: "#7289da"
+
+- name: itch.io
+  url: https://codist.itch.io/
+  icon: /assets/images/socials/itch.png
+  image-icon: true
+  color: "#7289da"
