@@ -27,14 +27,3 @@ Each wave spawns enemies overtime, these enemies need to be defeated to end the 
 After killing enough enemies your special meter will fill up, allowing you to summon a wave which kills enemies nearby.
 
 Coins can be used to give a random upgrade or downgrade to your player.
-
-## Streams
-
-The development of this game was live streamed to my YouTube audience. <br>
-I've put the links below if you'd like to watch.
-
-- [Stream 1](https://youtube.com/live/cvd4JHNrjJI?feature=share)
-- [Stream 2](https://youtube.com/live/lYIo0rxU-7I?feature=share)
-- [Stream 3](https://youtube.com/live/hWiH4iTv88s?feature=share)
-
-**Warning:** They may be extremely cringe and boring, I have no clue I can't bring myself to watch them again.
