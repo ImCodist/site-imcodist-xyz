@@ -11,7 +11,12 @@ title: about
         <div id="socialbox">
             {% for item in site.data.socials %}
             <div class="tooltip" id="social">
-                <div class="tooltip_text">{{ item.name }}</div>
+                <div class="tooltip_text">
+                    {{ item.name }}
+                    {% if item.copy %}
+                    <br><div id="copy">@{{ item.copy }}</div>
+                    {% endif %}
+                </div>
                 <a href="{{ item.url }}">
                     {% if item.image-icon %}
                     <img src="{{ item.icon }}">

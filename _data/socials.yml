@@ -14,7 +14,7 @@
   color: "#6364FF"
 
 - name: Discord
-  url: https://discord.com/users/323521498365296642
+  copy: codist
   icon: bi bi-discord
   color: "#7289da"
 
