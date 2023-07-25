@@ -1,0 +1,11 @@
+- url: https://easings.net/ 
+  name: easings.net
+  prefix: https://
+  suffix: /
+  description: A simple website that displays commonly used easing functions, and describes how to implement them.
+
+- url: https://keepachangelog.com/
+  name: keepachangelog.com
+  prefix: https://
+  suffix: /
+  description: An short and easy to understand guide on changelogs.

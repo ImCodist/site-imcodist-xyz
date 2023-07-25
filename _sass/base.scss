@@ -471,6 +471,17 @@ body {
                 padding-left: 20px;
                 padding-right: 20px;
             }
+            
+            #useful_links {
+                #link {
+                    display: inline;
+                }
+
+                #linkun {
+                    display: inline;
+                    color: $color_lightblue;
+                }
+            }
         }
     }
 

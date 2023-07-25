@@ -71,6 +71,19 @@ title: about
                 <li>I am a <b>dog person</b> but am slowly being moved onto the fence after being sent 1000 cat gifs by a <i>cough cough</i> <a href="https://twitter.com/ClodiumStuff">certain user</a> <i>cough cough</i>.</li>
                 <li>I pick <a href="/gifofmarioplushiedancing" id="marioers"><b>Mario</b></a> in any <b>Mario Party</b> game.</li>
             </ul>
+
+            <h3>Useful Links</h3>
+            <i>Just a collection of links I find useful, and you might too!</i>
+            <ul id="useful_links">
+                {% for item in site.data.links %}
+                <li>
+                    <a href="{{ item.url }}" target="_blank">
+                        <div id="linkun">{{ item.prefix }}</div><div id="link">{{ item.name }}</div><div id="linkun">{{ item.suffix }}</div>
+                    </a><br>
+                    <i>{{ item.description }}</i>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </div>
