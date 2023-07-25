@@ -8,9 +8,10 @@
   icon: bi bi-twitter
   color: "#55acee"
 
-- name: Mastodon
+- name: Fediverse
   url: https://lethallava.land/@codist
-  icon: bi bi-mastodon
+  icon: /assets/images/socials/fediverse.png
+  image-icon: true
   color: "#6364FF"
 
 - name: Discord
