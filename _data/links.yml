@@ -1,3 +1,9 @@
+- url: https://co.wukko.me/
+  name: co.wukko.me
+  prefix: https://
+  suffix: /
+  description: Clean and simple social media downloader. I highly recommend checking this out.
+
 - url: https://easings.net/ 
   name: easings.net
   prefix: https://
