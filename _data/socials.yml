@@ -35,3 +35,8 @@
   icon: /assets/images/socials/itch.png
   image-icon: true
   color: "#7289da"
+
+- name: Ko-fi
+  url: https://ko-fi.com/codist
+  icon: /assets/images/socials/kofi.png
+  image-icon: true
