@@ -14,6 +14,12 @@
   image-icon: true
   color: "#6364FF"
 
+- name: Bluesky
+  url: https://bsky.app/profile/imcodist.xyz
+  icon: /assets/images/socials/bluesky.png
+  image-icon: true
+  color: "#6364FF"
+
 - name: Discord
   copy: codist
   icon: bi bi-discord
