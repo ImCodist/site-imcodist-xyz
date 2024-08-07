@@ -11,5 +11,8 @@
 - name: blog
   url: /blog/
 
+- name: mc
+  url: https://mc.imcodist.xyz
+
 # - name: test
 #   url: /test/
